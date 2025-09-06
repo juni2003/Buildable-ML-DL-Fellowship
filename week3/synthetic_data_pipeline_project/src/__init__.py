@@ -5,7 +5,7 @@ A modular package for generating synthetic customer data with statistics and vis
 """
 
 from .data_generator import DataGenerator
-from .stats import calculate_mean, calculate_median, calculate_std, get_all_stats, print_stats
+from .status import calculate_mean, calculate_median, calculate_std, get_all_stats, print_stats
 from .augment import augment_dataset, add_gaussian_noise, oversample_minority
 from .visuals import plot_histogram, plot_scatterplot, quick_data_overview
 
