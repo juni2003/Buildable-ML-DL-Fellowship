@@ -13,7 +13,9 @@ def handle_missing_values(df):
         df[column].fillna(df[column].mean(), inplace=True)
     # Fill missing values with the mode for categorical columns
     for column in df.select_dtypes(include=['object']).columns:
-        df[column].fillna(df[column].mode()[0], inplace=True)
+        mode = df[column].mode()
+        if not mode.empty:
+            df[column].fillna(mode[0], inplace=True)
     return df
 
 # Encode categorical variables
