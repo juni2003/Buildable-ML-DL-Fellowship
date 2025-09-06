@@ -40,7 +40,11 @@ def plot_multiple_histograms(df, columns, figsize=(12, 8)):
     n_rows = (n_cols + 1) // 2
     
     fig, axes = plt.subplots(n_rows, 2, figsize=figsize)
-    axes = axes.flatten() if n_rows > 1 else [axes] if n_rows == 1 else axes
+    if n_rows > 1:
+        axes = axes.flatten()
+    elif n_rows == 1:
+        axes = [axes]
+    # else: axes remains as is
     
     for i, col in enumerate(columns):
         if i < len(axes):
