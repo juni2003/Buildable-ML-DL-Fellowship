@@ -60,9 +60,8 @@ project_root/
 │  └─ metrics.csv
 ├─ stats.py
 ├─ augment.py
-├─ visualizer.py
+├─ visuals.py
 ├─ model_trainer.py
-├─ q7_run.py                # (Optional helper: stats + augmentation demo)
 └─ README.md
 ```
 
@@ -100,7 +99,7 @@ pip install pandas numpy seaborn matplotlib scikit-learn joblib
 
 ## 6. Scripts
 
-### visualizer.py
+### visuals.py
 - Loads `data/processed/cleaned_data.csv`.
 - Generates four plots into `plots/`.
 - Quick visual sanity check for distributions and relationships.
@@ -113,10 +112,6 @@ pip install pandas numpy seaborn matplotlib scikit-learn joblib
 - Function: `augment_dataset(df, noise_frac=0.02, target_col='purchased')`
 - Duplicates the dataset, adds light Gaussian noise to numeric predictors (excludes target), concatenates & shuffles.
 
-### q7_run.py (optional helper)
-- Loads cleaned data.
-- Computes stats for first two numeric columns (excluding target).
-- Runs augmentation and saves `augmented_data.csv`.
 
 ### model_trainer.py
 - Selects augmented dataset if present; otherwise uses cleaned.
@@ -143,7 +138,7 @@ Outputs:
 
 ### C. Generate plots
 ```bash
-python visualizer.py
+python visuals.py
 ```
 
 ### D. Train models
