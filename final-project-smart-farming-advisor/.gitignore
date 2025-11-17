@@ -1,0 +1,31 @@
+# Environment
+.env
+venv/
+env/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Large data files (too big for GitHub)
+data/raw/
+data/processed/
+
+# Large model files (use Git LFS or provide download link)
+models/disease_model_resnet50.pth
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+temp/

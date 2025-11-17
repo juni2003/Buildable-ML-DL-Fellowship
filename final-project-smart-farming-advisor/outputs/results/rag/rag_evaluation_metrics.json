@@ -1,0 +1,51 @@
+{
+  "overall_metrics": {
+    "average_relevance": 0.6398956020673116,
+    "hit_rate": 1.0,
+    "mean_reciprocal_rank": 1.0,
+    "top1_average_relevance": 0.756142771244049,
+    "total_queries": 5
+  },
+  "per_query_results": [
+    {
+      "question": "What is the best time to plant rice?",
+      "relevance": 0.621935506661733,
+      "hit_rate": 1,
+      "mrr": 1.0,
+      "top1_relevance": 0.732384204864502,
+      "retrieved_count": 3
+    },
+    {
+      "question": "How often should I water tomato plants?",
+      "relevance": 0.6920057435830435,
+      "hit_rate": 1,
+      "mrr": 1.0,
+      "top1_relevance": 0.8577920198440552,
+      "retrieved_count": 3
+    },
+    {
+      "question": "What fertilizer is good for wheat?",
+      "relevance": 0.6318327585856119,
+      "hit_rate": 1,
+      "mrr": 1.0,
+      "top1_relevance": 0.7058807015419006,
+      "retrieved_count": 3
+    },
+    {
+      "question": "How can I control pests on cotton?",
+      "relevance": 0.6203421453634897,
+      "hit_rate": 1,
+      "mrr": 1.0,
+      "top1_relevance": 0.7574499249458313,
+      "retrieved_count": 3
+    },
+    {
+      "question": "Which crops grow well in sandy soil?",
+      "relevance": 0.6333618561426798,
+      "hit_rate": 1,
+      "mrr": 1.0,
+      "top1_relevance": 0.7272070050239563,
+      "retrieved_count": 3
+    }
+  ]
+}
