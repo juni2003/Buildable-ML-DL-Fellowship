@@ -23,14 +23,15 @@ The system uses an **intelligent agent** to automatically route user queries to 
 
 ---
 ## 🏗️ System Architecture
-User Query → Intelligent Agent → Tool Router ↓ 
-┌──────────────┼──────────────┐ 
-↓ ↓ ↓ 
-Crop Predictor Disease Detector RAG Q&A 
-(Random Forest) (ResNet50) (FAISS + LLM)
+```bash
 
----
+        User Query          → Intelligent Agent               → Tool Router 
+         ┌────────────────────────────┼───────────────────────────────────┐ 
+         ↓                            ↓                                   ↓ 
+    Crop Predictor         Disease Detector                      RAG Q&A 
+    (Random Forest)           (ResNet50)                       (FAISS + LLM)
 
+```
 ## 🚀 Quick Start
 
 ### Prerequisites
