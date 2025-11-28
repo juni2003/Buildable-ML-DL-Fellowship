@@ -290,6 +290,6 @@ Let's continue the **Buildables** spirit:
 - Grow together as an AI community 🌍  
 
 **GitHub**: [@juni2003](https://github.com/juni2003)  
-**Email**: juni. xatti@gmail.com
+**Email**: juni.xatti@gmail.com
 
 Happy Learning & Coding!  🚀
